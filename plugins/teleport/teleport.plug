@@ -1,0 +1,9 @@
+[Core]
+name = teleport
+module = teleport
+
+[Documentation]
+description = Teleport bot for manage users and role
+
+[Python]
+version = 3
