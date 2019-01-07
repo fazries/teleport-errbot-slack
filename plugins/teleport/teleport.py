@@ -415,7 +415,7 @@ class teleportProduction(BotPlugin):
                 print(output)
 
                 if len(output) != 0:
-                    yield "role "+role_name+" has been updated with: "+(","/.join(app_new)
+                    yield "role "+role_name+" has been updated with: "+(",").join(app_new)
                     self.tlrole_reload
 
             except Exception as e:
