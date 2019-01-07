@@ -42,7 +42,7 @@ class teleportProduction(BotPlugin):
             return "Unable to connect, socket error"
 
     def get_email(self, usrID):
-        token = os.environ["token"]
+        token = os.environ["SLACK_TOKEN"]
         sc = SlackClient(token)
         resp = sc.api_call("users.info",user=usrID, )
         email = resp['user']['profile']['email']
